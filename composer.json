@@ -1,0 +1,15 @@
+{
+    "name": "eXtreme-bg/yii-leetforms",
+    "type": "library",
+    "keywords": ["yii", "yii framework", "yii 1.1"],
+    "homepage": "https://1337.bg",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bogdan Kovachev",
+            "email": "extreme@1337.bg",
+            "homepage": "https://1337.bg",
+            "role": "Developer"
+        }
+    ]
+}
