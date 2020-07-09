@@ -19,7 +19,7 @@
 </div>
 
 <script>
-    $(document).ready(function () {
+    $(function() {
         // Initialize CKEditor
         CKEDITOR.replace('<?= $this->inputName ?>');
     });

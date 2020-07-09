@@ -27,7 +27,7 @@
 </div>
 
 <script>
-    $(document).ready(function () {
+    $(function() {
         $('.btn-generate-slug').click(function (event) {
             event.preventDefault();
 

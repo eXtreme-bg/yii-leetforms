@@ -27,7 +27,7 @@
 </div>
 
 <script>
-    $(document).ready(function () {
+    $(function() {
         var format = 'DD.MM.YYYY';
 
         var date = moment();

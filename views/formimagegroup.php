@@ -19,7 +19,7 @@
 </div>
 
 <script>
-    $(document).ready(function () {
+    $(function() {
         // Properties
         var uploadUrl = '<?= Yii::app()->createUrl('admin/default/uploadImage', ['formName' => 'photoUpload']) ?>';
         var imagesFolderUrl = '<?= Yii::app()->params['images_url'] ?>';

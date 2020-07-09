@@ -19,7 +19,7 @@
 </div>
 
 <script>
-    $(document).ready(function () {
+    $(function() {
         $('input[type="hidden"]').typeaheadmultiselect({
             selected: <?= CJSON::encode($this->selected) ?>,
             translations: {
