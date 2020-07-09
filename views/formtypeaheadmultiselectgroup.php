@@ -20,7 +20,7 @@
 
 <script>
     $(function() {
-        $('input[type="hidden"]').typeaheadmultiselect({
+        $('input[name="<?= $this->inputName ?>[]"]').typeaheadmultiselect({
             selected: <?= CJSON::encode($this->selected) ?>,
             translations: {
                 inputplaceholder: 'Започни да пишеш...'
