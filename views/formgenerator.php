@@ -26,5 +26,5 @@
     }
     ?>
 
-    <?php $this->widget('application.vendor.eXtreme-bg.yii-leetforms.' . $value['type'], $params); ?>
+    <?php $this->widget('application.vendor.extreme-bg.yii-leetforms.' . $value['type'], $params); ?>
 <?php endforeach; ?>
