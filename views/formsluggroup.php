@@ -31,26 +31,30 @@
 </div>
 
 <script>
+    function urlLit(w, v) {
+        var tr = 'a b v g d e ["zh","j"] z i y k l m n o p r s t u f h c ch sh ["sht","6t"] a ~ y ~ yu ya'.split(' ');
+        var ww = '';
+        w = w.toLowerCase();
+        for (i = 0; i < w.length; ++i) {
+          cc = w.charCodeAt(i); ch = (cc >= 1072 ? tr[cc-1072] : w[i]);
+          if (ch.length < 3) {
+              ww += ch;
+          } else {
+              ww += eval(ch)[v];
+          }
+        }
+
+        return (ww.replace(/[^a-zA-Z0-9\-]/g,'-').replace(/[-]{2,}/gim, '-').replace( /^\-+/g, '').replace( /\-+$/g, ''));
+    }
+
     $(function() {
         $('.btn-generate-slug').click(function (event) {
             event.preventDefault();
 
-            var url = '<?= Yii::app()->createUrl('admin/default/generateSlug', ['word' => '_WORD_']); ?>';
-            var title = $('input[name="title"]').val();
-            var slugInput = $('input[name="slug"]');
-            url = url.replace('_WORD_', title);
+            var source = $('input[name="title"]').val();
+            var input = $(this).closest('.input-group').find('input');
 
-            $.ajax({
-                url: url,
-                dataType: 'json',
-                cache: false,
-                success: function(data) {
-                    $(slugInput).val(data.data);
-                },
-                error: function() {
-                    alert('<?= Yii::t('AdminModule.base', 'error.general') ?>');
-                }
-            });
+            input.val(urlLit(source, 0));
         });
     });
 </script>
