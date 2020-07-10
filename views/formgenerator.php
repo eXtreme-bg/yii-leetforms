@@ -28,6 +28,10 @@
     if (array_key_exists('fetchUrl', $value)) {
         $params['fetchUrl'] = $value['fetchUrl'];
     }
+
+    if (array_key_exists('format', $value)) {
+        $params['format'] = $value['format'];
+    }
     ?>
 
     <?php $this->widget('application.vendor.extreme-bg.yii-leetforms.' . $value['type'], $params); ?>

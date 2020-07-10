@@ -11,6 +11,9 @@ class FormDateTimeGroup extends CWidget {
     /** @var string Input name */
     public $inputName;
 
+    /** @var string Display format */
+    public $format = 'DD.MM.YYYY';
+
     /** @var string Input container class */
     public $inputContainerClass = 'col-md-2';
 

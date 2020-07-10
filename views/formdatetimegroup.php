@@ -32,27 +32,31 @@
 
 <script>
     $(function() {
-        var format = 'DD.MM.YYYY';
-
-        var date = moment();
-
-        if ('<?= $model[$this->inputName] ?>' !== '') {
-            date = moment(parseInt('<?= $model[$this->inputName] ?>') * 1000);
-        }
-
-        $('input[name="<?= $this->inputName ?>"]').val(date.format('X'));
-        $('.datepicker-<?= $this->inputName ?> input').val(date.format(format));
+        var hiddenInput = $('input[name="<?= $this->inputName ?>"]');
+        var format = '<?= $this->format ?>';
 
         $('.datepicker-<?= $this->inputName ?>').datetimepicker({
             format: format,
-            locale: 'bg'
+            locale: 'bg',
+            showClear: true
         });
+
+        if (hiddenInput.val() !== '') {
+            date = moment(parseInt(hiddenInput.val()) * 1000);
+
+            hiddenInput.val(date.format('X'));
+            $('.datepicker-<?= $this->inputName ?> input').val(date.format(format));
+        }
 
         $('.datepicker-<?= $this->inputName ?>').on('dp.change', function (e) {
             if (e.oldDate !== null && e.oldDate !== false) {
-                var timestamp = e.date.format('X');
+                if (e.date !== false) {
+                    var timestamp = e.date.format('X');
 
-                $('input[name="<?= $this->inputName ?>"]').val(timestamp);
+                    hiddenInput.val(timestamp);
+                } else {
+                    hiddenInput.val('');
+                }
             }
         });
     });
