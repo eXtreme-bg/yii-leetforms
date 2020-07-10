@@ -1,3 +1,7 @@
+<?php
+/* @var $this FormTypeaheadMultiselectGroup */
+?>
+
 <div class="form-group <?= $model->getError($this->inputName) ? 'has-error' : '' ?>">
     <label for="<?= $this->inputName ?>" class="col-md-2 control-label">
         <?php if ($model->isAttributeRequired($this->inputName)) : ?>

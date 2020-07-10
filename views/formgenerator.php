@@ -1,3 +1,7 @@
+<?php
+/* @var $this FormGenerator */
+?>
+
 <?php foreach ($model->formFields as $value) : ?>
     <?php
     $params = [

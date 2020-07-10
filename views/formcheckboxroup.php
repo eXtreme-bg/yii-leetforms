@@ -1,3 +1,7 @@
+<?php
+/* @var $this FormCheckboxGroup */
+?>
+
 <div class="form-group <?= $model->getError($this->inputName) ? 'has-error' : '' ?>">
     <div class="<?= $this->inputContainerClass ?>">
         <?php $temp = $this->inputName; ?>
