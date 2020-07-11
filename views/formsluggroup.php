@@ -46,7 +46,7 @@
         $('.btn-generate-slug').click(function (event) {
             event.preventDefault();
 
-            var source = $('input[name="title"]').val();
+            var source = $('input[name="<?= $this->sourceInputName ?>"]').val();
             var input = $(this).closest('.input-group').find('input');
 
             input.val(urlLit(source, 0));

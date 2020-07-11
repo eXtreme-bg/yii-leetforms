@@ -5,6 +5,9 @@
  */
 class FormSlugGroup extends FormGroup {
 
+    /** @var string */
+    public $sourceInputName = 'title';
+
     /**
      * {@inheritDoc}
      */
