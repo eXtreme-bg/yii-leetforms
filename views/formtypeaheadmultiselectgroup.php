@@ -3,15 +3,10 @@
 ?>
 
 <div class="form-group <?= $model->getError($this->inputName) ? 'has-error' : '' ?>">
-    <label for="<?= $this->inputName ?>" class="col-md-2 control-label">
-        <?php if ($model->isAttributeRequired($this->inputName)) : ?>
-            <?= $model->attributeLabels()[$this->inputName] ?>:*
-        <?php else : ?>
-            <?= $model->attributeLabels()[$this->inputName] ?>:
-        <?php endif; ?>
-
-        <span class="glyphicon glyphicon-question-sign hint" rel="tooltip" title="<?= $model->attributeHints()[$this->inputName] ?>"></span>
-    </label>
+    <?php $this->widget('application.vendor.extreme-bg.yii-leetforms.FormLabel', [
+        'model' => $model,
+        'inputName' => $this->inputName
+    ]); ?>
 
     <div class="<?= $this->inputContainerClass ?>">
         <input type="hidden" name="<?= $this->inputName ?>[]" class="form-control">
