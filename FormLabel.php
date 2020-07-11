@@ -3,13 +3,7 @@
 /**
  * @author Bogdan Kovachev (https://1337.bg)
  */
-class FormLabel extends CWidget {
-
-    /** @var <T> ActiveRecord model */
-    public $model;
-
-    /** @var string Input name */
-    public $inputName;
+class FormLabel extends FormGroup {
 
     /**
      * {@inheritDoc}

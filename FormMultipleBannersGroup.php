@@ -3,13 +3,7 @@
 /**
  * @author Bogdan Kovachev (https://1337.bg)
  */
-class FormMultipleBannersGroup extends CWidget {
-
-    /** @var <T> ActiveRecord model */
-    public $model;
-
-    /** @var string Input name */
-    public $inputName;
+class FormMultipleBannersGroup extends FormGroup {
 
     /** @var string Input container class */
     public $inputContainerClass = 'col-md-8';
