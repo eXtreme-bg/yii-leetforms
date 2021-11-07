@@ -13,7 +13,7 @@
             <input type="text" name="<?= $this->inputName ?>" value="<?= CHtml::encode($model[$this->inputName]) ?>" class="form-control">
 
             <span class="input-group-btn">
-                <button class="btn btn-default btn-generate-slug" type="button">
+                <button type="button" class="btn btn-default btn-generate-slug" data-source-input-name="<?= $this->sourceInputName ?>">
                     Генерирай
                 </button>
             </span>
@@ -43,10 +43,11 @@
     }
 
     $(function() {
-        $('.btn-generate-slug').click(function (event) {
+        $('.btn-generate-slug').on('click', function (event) {
             event.preventDefault();
 
-            var source = $('input[name="<?= $this->sourceInputName ?>"]').val();
+            var sourceInputName = $(this).attr('data-source-input-name');
+            var source = $('input[name="' + sourceInputName + '"]').val();
             var input = $(this).closest('.input-group').find('input');
 
             input.val(urlLit(source, 0));
