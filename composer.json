@@ -1,7 +1,13 @@
 {
     "name": "extreme-bg/yii-leetforms",
+    "keywords": [
+        "yii",
+        "yii framework",
+        "yii 1.1",
+        "raccoon cart",
+        "raccooncart"
+    ],
     "type": "library",
-    "keywords": ["yii", "yii framework", "yii 1.1"],
     "homepage": "https://1337.bg",
     "license": "MIT",
     "authors": [
@@ -11,5 +17,8 @@
             "homepage": "https://1337.bg",
             "role": "Developer"
         }
-    ]
+    ],
+    "require": {
+        "php": "~7.1 || ^8.0"
+    }
 }
