@@ -10,7 +10,7 @@ class FormLabel extends FormGroup {
      */
     public function init() {
         // Render
-        $this->render('formlabel', [
+        $this->render('label', [
             'model' => $this->model
         ]);
     }

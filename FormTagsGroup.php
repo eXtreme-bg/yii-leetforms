@@ -10,7 +10,7 @@ class FormTagsGroup extends FormGroup {
      */
     public function init() {
         // Render
-        $this->render('formtagsgroup', [
+        $this->render('tags-group', [
             'model' => $this->model
         ]);
     }

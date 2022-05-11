@@ -25,7 +25,7 @@ class FormTypeaheadMultiselectGroup extends FormGroup {
      */
     public function init() {
         // Render
-        $this->render('formtypeaheadmultiselectgroup', [
+        $this->render('typeahead-multi-select-group', [
             'model' => $this->model
         ]);
     }

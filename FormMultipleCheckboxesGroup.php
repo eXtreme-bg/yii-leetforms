@@ -15,7 +15,7 @@ class FormMultipleCheckboxesGroup extends FormGroup {
      */
     public function init() {
         // Render
-        $this->render('formmultiplecheckboxesgroup', [
+        $this->render('multiple-checkboxes-group', [
             'model' => $this->model
         ]);
     }

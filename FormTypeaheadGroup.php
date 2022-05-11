@@ -25,7 +25,7 @@ class FormTypeaheadGroup extends FormGroup {
      */
     public function init() {
         // Render
-        $this->render('formtypeaheadgroup', [
+        $this->render('typeahead-group', [
             'model' => $this->model
         ]);
     }

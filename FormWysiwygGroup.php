@@ -15,7 +15,7 @@ class FormWysiwygGroup extends FormGroup {
      */
     public function init() {
         // Render
-        $this->render('formwysiwyggroup', [
+        $this->render('wysiwyg-group', [
             'model' => $this->model
         ]);
     }

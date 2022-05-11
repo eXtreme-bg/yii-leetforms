@@ -15,7 +15,7 @@ class FormCheckboxGroup extends FormGroup {
      */
     public function init() {
         // Render
-        $this->render('formcheckboxroup', [
+        $this->render('checkbox-group', [
             'model' => $this->model
         ]);
     }

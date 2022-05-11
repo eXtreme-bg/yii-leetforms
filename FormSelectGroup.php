@@ -15,7 +15,7 @@ class FormSelectGroup extends FormGroup {
      */
     public function init() {
         // Render
-        $this->render('formselectgroup', [
+        $this->render('select-group', [
             'model' => $this->model
         ]);
     }

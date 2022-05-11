@@ -15,7 +15,7 @@ class FormMultipleBannersGroup extends FormGroup {
      */
     public function init() {
         // Render
-        $this->render('formmultiplebannersgroup', [
+        $this->render('multiple-banners-group', [
             'model' => $this->model
         ]);
     }

@@ -10,7 +10,7 @@ class FormImageGroup extends FormGroup {
      */
     public function init() {
         // Render
-        $this->render('formimagegroup', [
+        $this->render('image-group', [
             'model' => $this->model
         ]);
     }

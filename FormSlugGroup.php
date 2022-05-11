@@ -15,7 +15,7 @@ class FormSlugGroup extends FormGroup {
      */
     public function init() {
         // Render
-        $this->render('formsluggroup', [
+        $this->render('slug-group', [
             'model' => $this->model
         ]);
     }

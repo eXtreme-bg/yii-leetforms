@@ -15,7 +15,7 @@ class FormTextareaGroup extends FormGroup {
      */
     public function init() {
         // Render
-        $this->render('formtextareagroup', [
+        $this->render('textarea-group', [
             'model' => $this->model
         ]);
     }

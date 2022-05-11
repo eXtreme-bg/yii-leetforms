@@ -20,7 +20,7 @@ class FormDateTimeGroup extends FormGroup {
      */
     public function init() {
         // Render
-        $this->render('formdatetimegroup', [
+        $this->render('datetime-group', [
             'model' => $this->model
         ]);
     }

@@ -15,7 +15,7 @@ class FormGenerator extends CWidget {
      */
     public function init() {
         // Render
-        $this->render('formgenerator', [
+        $this->render('generator', [
             'model' => $this->model
         ]);
     }

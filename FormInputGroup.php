@@ -15,7 +15,7 @@ class FormInputGroup extends FormGroup {
      */
     public function init() {
         // Render
-        $this->render('forminputgroup', [
+        $this->render('input-group', [
             'model' => $this->model
         ]);
     }
