@@ -5,7 +5,9 @@
  */
 class FormMultipleBannersGroup extends FormGroup {
 
-    /** @var string Input container class */
+    /**
+     * @var string Input container class
+     */
     public $inputContainerClass = 'col-md-8';
 
     /**
@@ -17,5 +19,4 @@ class FormMultipleBannersGroup extends FormGroup {
             'model' => $this->model
         ]);
     }
-
 }

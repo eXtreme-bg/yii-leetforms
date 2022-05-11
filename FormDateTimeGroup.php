@@ -5,10 +5,14 @@
  */
 class FormDateTimeGroup extends FormGroup {
 
-    /** @var string Input container class */
+    /**
+     * @var string Input container class
+     */
     public $inputContainerClass = 'col-md-2';
 
-    /** @var string Display format */
+    /**
+     * @var string Display format
+     */
     public $format = 'DD.MM.YYYY';
 
     /**
@@ -20,5 +24,4 @@ class FormDateTimeGroup extends FormGroup {
             'model' => $this->model
         ]);
     }
-
 }

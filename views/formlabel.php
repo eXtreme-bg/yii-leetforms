@@ -1,11 +1,12 @@
 <?php
 /* @var $this FormLabel */
+/* @var $model mixed */
 ?>
 
 <label for="<?= $this->inputName ?>" class="col-md-2 control-label">
-    <?php if ($model->isAttributeRequired($this->inputName)) : ?>
+    <?php if ($model->isAttributeRequired($this->inputName)): ?>
         <?= $model->attributeLabels()[$this->inputName] ?>:*
-    <?php else : ?>
+    <?php else: ?>
         <?= $model->attributeLabels()[$this->inputName] ?>:
     <?php endif; ?>
 

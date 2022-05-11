@@ -5,7 +5,9 @@
  */
 class FormWysiwygGroup extends FormGroup {
 
-    /** @var string Input container class */
+    /**
+     * @var string Input container class
+     */
     public $inputContainerClass = 'col-md-6';
 
     /**
@@ -17,5 +19,4 @@ class FormWysiwygGroup extends FormGroup {
             'model' => $this->model
         ]);
     }
-
 }

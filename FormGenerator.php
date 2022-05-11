@@ -5,7 +5,9 @@
  */
 class FormGenerator extends CWidget {
 
-    /** @var <T> ActiveRecord model */
+    /**
+     * @var <T> ActiveRecord model
+     */
     public $model;
 
     /**
@@ -17,5 +19,4 @@ class FormGenerator extends CWidget {
             'model' => $this->model
         ]);
     }
-
 }

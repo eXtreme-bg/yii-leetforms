@@ -1,5 +1,6 @@
 <?php
 /* @var $this FormMultipleBannersGroup */
+/* @var $model mixed */
 ?>
 
 <div class="form-group <?= $model->getError($this->inputName) ? 'has-error' : '' ?>">
@@ -31,13 +32,13 @@
             </div>
         </div>
 
-        <?php foreach (unserialize($model[$this->inputName]) as $key => $items) : ?>
+        <?php foreach (unserialize($model[$this->inputName]) as $key => $items): ?>
             <div class="row" style="margin-bottom: 10px;">
                 <div class="col-md-2">
                     <input type="hidden" name="bannerpictureurl[]" value="<?= $items['pictureurl'] ?>">
 
                     <a href="#" class="add-picture-button">
-                        <?php if (!empty($items['pictureurl'])) : ?>
+                        <?php if (!empty($items['pictureurl'])): ?>
                             <img src="<?= $items['pictureurl'] ?>" alt="" class="img-responsive">
                         <?php else: ?>
                             <img src="/assets/admin/js/photoeditor/img/placeholder-alt.png" alt="" class="img-responsive">
@@ -117,7 +118,7 @@
         ////////////////////////////////////////////////////////////////////////////
 
         var form = $('<form></form>', {
-            action : '',
+            action: '',
             method: 'POST',
             style: 'display: none'
         });

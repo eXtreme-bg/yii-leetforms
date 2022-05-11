@@ -1,8 +1,9 @@
 <?php
 /* @var $this FormGenerator */
+/* @var $model mixed */
 ?>
 
-<?php foreach ($model->formFields as $value) : ?>
+<?php foreach ($model->formFields as $value): ?>
     <?php
     $params = [
         'model' => $model,

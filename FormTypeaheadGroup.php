@@ -5,13 +5,19 @@
  */
 class FormTypeaheadGroup extends FormGroup {
 
-    /** @var string Input container class */
+    /**
+     * @var string Input container class
+     */
     public $inputContainerClass = 'col-md-7';
 
-    /** @var string Fetch URL */
+    /**
+     * @var string Fetch URL
+     */
     public $fetchUrl;
 
-    /** @var array Selected keys */
+    /**
+     * @var array Selected keys
+     */
     public $selected;
 
     /**
@@ -23,5 +29,4 @@ class FormTypeaheadGroup extends FormGroup {
             'model' => $this->model
         ]);
     }
-
 }

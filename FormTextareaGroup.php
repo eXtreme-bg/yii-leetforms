@@ -5,7 +5,9 @@
  */
 class FormTextareaGroup extends FormGroup {
 
-    /** @var string Input container class */
+    /**
+     * @var string Input container class
+     */
     public $inputContainerClass = 'col-md-7';
 
     /**
@@ -17,5 +19,4 @@ class FormTextareaGroup extends FormGroup {
             'model' => $this->model
         ]);
     }
-
 }

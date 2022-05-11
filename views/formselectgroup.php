@@ -1,5 +1,6 @@
 <?php
 /* @var $this FormSelectGroup */
+/* @var $model mixed */
 ?>
 
 <div class="form-group <?= $model->getError($this->inputName) ? 'has-error' : '' ?>">
@@ -11,7 +12,7 @@
     <div class="<?= $this->inputContainerClass ?>">
         <select name="<?= $this->inputName ?>" class="form-control">
             <?php $fetchFunctionName = $this->values; ?>
-            <?php foreach ($model->$fetchFunctionName() as $key => $value) : ?>
+            <?php foreach ($model->$fetchFunctionName() as $key => $value): ?>
             <?php $temp = $this->inputName; ?>
                 <?php $selected = ($model->$temp == $key) ? 'selected' : ''; ?>
 

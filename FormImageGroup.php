@@ -14,5 +14,4 @@ class FormImageGroup extends FormGroup {
             'model' => $this->model
         ]);
     }
-
 }

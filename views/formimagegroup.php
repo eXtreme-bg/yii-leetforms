@@ -1,5 +1,6 @@
 <?php
 /* @var $this FormImageGroup */
+/* @var $model mixed */
 ?>
 
 <div class="form-group <?= $model->getError($this->inputName) ? 'has-error' : '' ?>">

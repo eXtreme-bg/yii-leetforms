@@ -1,5 +1,6 @@
 <?php
 /* @var $this FormMultipleCheckboxesGroup */
+/* @var $model mixed */
 
 $fetchFunctionName = $this->values;
 $temp = $this->inputName;
@@ -12,7 +13,7 @@ $temp = $this->inputName;
     ]); ?>
 
     <div class="<?= $this->inputContainerClass ?>">
-        <?php foreach ($model->$fetchFunctionName() as $key => $value) : ?>
+        <?php foreach ($model->$fetchFunctionName() as $key => $value): ?>
             <?php $selected = (is_array($model->$temp) && in_array($key, $model->$temp)) ? 'checked' : ''; ?>
 
             <div class="checkbox">

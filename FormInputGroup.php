@@ -5,7 +5,9 @@
  */
 class FormInputGroup extends FormGroup {
 
-    /** @var string Input type */
+    /**
+     * @var string Input type
+     */
     public $inputType = 'text';
 
     /**
@@ -17,5 +19,4 @@ class FormInputGroup extends FormGroup {
             'model' => $this->model
         ]);
     }
-
 }

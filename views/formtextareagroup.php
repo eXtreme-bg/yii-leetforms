@@ -1,5 +1,6 @@
 <?php
 /* @var $this FormTextareaGroup */
+/* @var $model mixed */
 ?>
 
 <div class="form-group <?= $model->getError($this->inputName) ? 'has-error' : '' ?>">

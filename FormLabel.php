@@ -14,5 +14,4 @@ class FormLabel extends FormGroup {
             'model' => $this->model
         ]);
     }
-
 }

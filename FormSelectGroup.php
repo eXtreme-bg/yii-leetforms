@@ -5,7 +5,9 @@
  */
 class FormSelectGroup extends FormGroup {
 
-    /** @var string Function name that returns values */
+    /**
+     * @var string Function name that returns values
+     */
     public $values = 'getStatuses';
 
     /**
@@ -17,5 +19,4 @@ class FormSelectGroup extends FormGroup {
             'model' => $this->model
         ]);
     }
-
 }

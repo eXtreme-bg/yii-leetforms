@@ -5,7 +5,9 @@
  */
 class FormSlugGroup extends FormGroup {
 
-    /** @var string */
+    /**
+     * @var string
+     */
     public $sourceInputName = 'title';
 
     /**
@@ -17,5 +19,4 @@ class FormSlugGroup extends FormGroup {
             'model' => $this->model
         ]);
     }
-
 }
