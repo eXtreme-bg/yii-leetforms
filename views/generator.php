@@ -37,6 +37,10 @@
     if (array_key_exists('sourceInputName', $value)) {
         $params['sourceInputName'] = $value['sourceInputName'];
     }
+
+    if (array_key_exists('html', $value)) {
+        $params['html'] = $value['html'];
+    }
     ?>
 
     <?php $this->widget('application.vendor.extreme-bg.yii-leetforms.' . $value['type'], $params); ?>
